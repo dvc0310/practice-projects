@@ -1,4 +1,4 @@
-import { gameBoard, createPlayer, game} from './game/tic-tac-toe2.js';
+import { gameBoard, createPlayer, game} from './tic-tac-toe/tic-tac-toe.js';
 
 function mainEvent() {
     const cells = Array.from(document.getElementsByClassName('cell'));
