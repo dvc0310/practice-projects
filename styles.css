@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* or use space-evenly */
+    align-items: center;
+    height: 100vh; /* This will make the container take up the full height of the viewport */
+    padding: 20px; /* Add some padding to prevent the items from touching the edges */
+}
+
+
+.game-board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#reset-button {
+    width: 100px;  /* adjust as needed */
+    height: 50px;  /* adjust as needed */
+    align-self: center;
+    justify-self: flex-end;
+    /* other styles here */
+}
+
+
